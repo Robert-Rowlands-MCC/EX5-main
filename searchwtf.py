@@ -20,6 +20,6 @@ class ByPublisherIdWTF(FlaskForm):
     publisher_choice = SelectField("PublisherChoice", choices=publishers)
 
 class ByTitleWTF(FlaskForm):
-    # This will also need a stringfield for the words the user types
-    pass
+    # adding search by title functionality
+    title_search = StringField("TitleSearch", validators=[DataRequired()])
 
